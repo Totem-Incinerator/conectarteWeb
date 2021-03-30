@@ -306,7 +306,6 @@ body{
 
 
 /* COMENTARIOS */
-
 .comentarios{
     width: 100%;
     margin: 30px auto;    
@@ -383,4 +382,13 @@ body{
     background: #fff;
     color: #16c79a;
     transition: .5s;
+}
+
+
+
+@media screen and (max-width: 360px){
+
+    .principal{
+        flex-wrap: nowrap;
+    }
 }
