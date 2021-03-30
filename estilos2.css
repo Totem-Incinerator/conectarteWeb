@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #16c79a;
+}
+
+.encabezado__ancla{
+    max-width: 100%;
+    /* border: 1px solid red; */
+}
+
+.encabezado__logo{
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.encabezado{
+    /* background-color: gray; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #16c79a;
+}
+
+.menu__items{
+    display: inline;
+}
+
+.menu__items a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+
+
+/* TEXTOS */
+.textos__info{
+    width: 100%;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 786px;
+    background: #16c79a;
+    /* border: 1px solid red; */
+}
+
+.principal__textos{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 20px auto;
+}
+
+.principal__textos--caja{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: 20px auto;
+}
+
+.principal__textos--caja h2{
+    font-size: 50px;
+}
+
+.principal__img{
+    max-width: 48%;
+}
+
+.principal__imagen{
+    display: flex;
+    justify-content: center; 
+    /* border: 1px solid red; */
+}
+
+.principal__botones{
+    display: flex;
+    margin: 0px auto;
+    flex-direction: column;
+}
+
+.boton{
+    width: 120px;
+    height: 60px;
+    margin-top: 15px;
+	background-color: #19456b;
+	color: #fff;
+	font-weight: bolder;
+	border: none;
+	border-radius: 15px;
+    /* align-self: center; */
+}
+
+/* .boton:last-child{
+    margin-left: 5px;
+} */
+
+.boton:hover{
+    transition: 1s;
+	background-color: #fff;
+	color: black;
+	cursor: pointer;
+	border: 1px solid  #19456b;
+}
+
+
+
+
+
+/* LOGIN */
+.login{
+    width: 100%;
+    background: #16c79a;
+    margin: 0px auto;
+    /* border: 1px solid red; */
+}
+
+.login__form{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    background: #11698e;
+    border-radius: 45px;
+    width: 80%;
+    height: 400px; 
+    margin: 20px auto;
+}
+
+.login__title{
+    text-align: center;
+    margin: 0px auto;
+    color: #fff;
+}
+
+
+.login__nombre{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.form__label{
+    /* border: 1px solid red; */
+    width: 200px;
+    margin: 0px auto;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form__input{
+    border: 1px solid hidden;
+    width: 200px;
+    height: 30px;
+    margin: 0px auto;
+    padding-left: 10px;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+.form__input:focus{
+    border-bottom: 1px solid #11b189;
+    transition: .5s;
+}
+
+.login__contrasena{
+    display: flex;
+    flex-direction: column;
+}
+
+.entrar{
+    width: 150px;
+    padding: .4em;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 45px;
+    border-radius: 45px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: #11b189;
+    text-transform: uppercase;
+    
+}
+
+.entrar:hover{
+    color: #11b189;
+    background: #fff;
+    border: 1px solid #11b189;
+    transition: .2s;
+}
+
+/* .login__registrarse{
+    color: #fff;
+    font-size: 15px;
+    display: block;
+} */
+
+.login__registrarse{
+    /* display: inline-flex; */
+    color: #fff;
+    font-size: 15px;
+    margin: 35px auto;
+    text-align: center;
+    width: 80%;
+}
+
+
+
+
+/* SECTION INFORMACIÓN DEL PROYECTO */
+.info{
+    width: 100%;
+    background: #16c79a;
+}
+
+.info__title{
+    color: #fff;
+    text-align: center;
+    
+}
+
+.info__textos{
+    width: 80%;
+    margin: 5px auto;
+}
+
+.info__textos p{
+    text-align: justify;
+}
+
+.info__textos h3{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.info__textos--proyecto,
+.info__textos--mision,
+.info__textos--vision{
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #173e60, #1b4a72);
+    transition: .1s;
+
+}
+
+
+/* INFO DESARROLLADORES */
+.info__des{
+    width: 100%;
+}
+
+.info__des--tittle{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.info__des--content{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: #11698e;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.info__devs--img{
+    display: block;
+    max-width: 60%;
+    border-radius: 60%;
+    margin: 10px auto;
+}
+
+.info__des--nb{
+    width: 70%;
+    margin: 15px auto;
+    color: #fff;
+}
+
+
+/* COMENTARIOS */
+
+.comentarios{
+    width: 100%;
+    margin: 30px auto;    
+}
+
+.comentarios__form{
+    width: 80%;
+    height: 450px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background: #11698e;
+}
+
+.comentarios__titulo h6{
+    text-align: center;
+    margin: 15px 0;
+    padding: 15px 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.comentarios__form--abajo{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 15px;   
+}
+
+.form__labelC{
+    color: #fff;
+    /* font-weight: bolder; */
+    /* margin-bottom: .2rem; */
+}
+
+.form__inputC{
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.form__inputC:focus{
+    border-bottom: 2px solid #16c79a;
+    transition: .5s;
+}
+
+.form__textarea{
+    resize: none;
+    outline: none;
+    height: 100px;
+}
+
+.form__enviar{
+    margin: 25px auto;
+    width: 150px;
+    padding: .3rem;
+    border-radius: 22px;
+    outline: none;
+    border: 1px solid transparent;
+    background: #16c79a;
+}
+
+.form__enviar:hover{
+    border: 1px solid #16c79a;
+    cursor: pointer;
+    background: #fff;
+    color: #16c79a;
+    transition: .5s;
+}

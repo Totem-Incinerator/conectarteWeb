@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Conectarte</title>
-	<link rel="stylesheet" href="styles.css">
+	<!-- <link rel="stylesheet" href="styles.css"> -->
+	<link rel="stylesheet" href="estilos2.css">
 </head>
 <body>
 	
@@ -27,27 +28,52 @@
 		</nav>
 	</header>
 
-	<article class="principal">
-		<section class="principal__textos">
-			<div class="principal__textos--caja">
-				<h1>Maneja tu Smartphone</h1>
-				<h2>Comunicate Conectate Diviertete</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ab distinctio, enim asperiores omnis commodi!</p>
-			</div>
-			<div class="principal__imagen">
-				<div class="circulo"></div>
-				<img class="principal__img" src="images/Previsualizacion.png" alt="soy una imagen">
+		<section class="textos__info">
+			<article class="principal">
+				<section class="principal__textos">
+					<div class="principal__textos--caja">
+						<h1>Maneja tu Smartphone</h1>
+						<h2>Conectarte</h2>
+						<p>Aprénde a usar tu smartphone con vídeos que te enseñaran a utilizar las opciones básicas de tu smartphone.</p>
+					</div>
+					<div class="principal__imagen">
+						<div class="circulo"></div>
+						<img class="principal__img" src="images/Previsualizacion2.png" alt="soy una imagen">
+					</div>
+				</section>
+				<section class="principal__botones">
+					<input class="boton" id="pos1" type="submit" value="Descargar">
+					<input class="boton" type="submit" value="Compartir">
+				</section>
+			</article> 
+		</section>
+
+		<!-- <hr> -->
+
+		<section class="login">
+			<h3 class="login__title" >Inicia sesión</h3>
+			<div class="wrapper">
+				<form action="" class="login__form">
+					<div class="login__nombre">
+						<label class="form__label">Correo</label>
+						<input class="form__input" type="text">
+					</div>
+					<div class="login__contrasena">
+						<label class="form__label">Contraseña</label>
+						<input class="form__input" type="password">
+					</div>
+					<button class="entrar">Entrar</button>
+					<div class="login__registrarse">
+						<p>¿No estás registrado? <a href="">click aquí</a></p>
+					</div>
+				</form>
 			</div>
 		</section>
-		<section class="principal__botones">
-			<input class="boton" id="pos1" type="submit" value="Descargar">
-			<input class="boton" type="submit" value="Compartir">
-		</section>
-	</article> 
 
 	<!-- <hr> -->
 
-	<article class="info" id="nosotros">
+	<article class="info" >
+		<h3 class="info__title" id="nosotros">Nosotros</h3>
 		<section class="info__textos">
 			<div class="info__textos--proyecto">
 				<h3>Información del proyecto</h3>
@@ -66,29 +92,30 @@
 		<!-- <hr> -->
 
 		<section class="info__des" id="contacto">
-			<div class="info__des--1">
+			<h5 id="contacto" class="info__des--tittle">Desarrolladores</h5>
+			<div class="info__des--content">
 				<img class="info__devs--img img1" src="images/Arley.png" alt="imagenDev1">
 				<div class="info__des--nb">
 					<h3 class="info__devs--nombre nombreAr">Arley Anacona</h3>
-					<p class="info__devs--bio bio1" >Lorem ipsum dolor sit, amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque laudantium labore dolor repudiandae recusandae sunt odio earum iste aliquid eum, cupiditate laboriosam tempore aliquam, quibusdam ut inventore aperiam perferendis!</p>
+					<p class="info__devs--bio bio1" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laboriosam architecto aperiam placeat, quaerat autem.</p>
 				</div>
 			</div>
-			<div class="info__des--2">
+			<div class="info__des--content">
 				<img class="info__devs--img img2" src="images/Yisel.png" alt="imagenDev2">
 				<div class="info__des--nb">
 					<h3 class="info__devs--nombre nombreYis">Yisel Velasco</h3>
-					<p class="info__devs--bio bio2" >Lorem ipsum dolor sit, amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque laudantium labore dolor repudiandae recusandae sunt odio earum iste aliquid eum, cupiditate laboriosam tempore aliquam, quibusdam ut inventore aperiam perferendis!</p>
+					<p class="info__devs--bio bio2" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eaque expedita qui pariatur non? Sunt.</p>
 				</div>
 			</div>
-			<div class="info__des--3">
+			<div class="info__des--content">
 				<img class="info__devs--img img3" src="images/Jhonathan.png" alt="imagenDev3">
 				<div class="info__des--nb">
 					<h3 class="info__devs--nombre nombreJhon" >Jhonathan Bermudez</h3>
-					<p class="info__devs--bio bio3">Lorem ipsum dolor sit, amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque laudantium labore dolor repudiandae recusandae sunt odio earum iste aliquid eum, cupiditate laboriosam tempore aliquam, quibusdam ut inventore aperiam perferendis!</p>
+					<p class="info__devs--bio bio3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati fugit eligendi id iure maiores.</p>
 				</div>
 			</div>
 		</section>
-	</article>
+	</article> 
 	<!-- <hr> -->
 
 	<article class="comentarios" id="comentarios">
@@ -97,22 +124,22 @@
 				<h6>Comentarios</h6>
 			</div>
 			<div class="comentarios__form--abajo form__nombre">
-				<label for="" class="form__label">Nombre</label>
-				<input type="text" class="form__input">
+				<label for="" class="form__labelC">Nombre</label>
+				<input type="text" class="form__inputC">
 			</div>
 			<div class="comentarios__form--abajo">
-				<label for="" class="form__label">Email</label>
-				<input type="text" class="form__input">
+				<label for="" class="form__labelC">Email</label>
+				<input type="text" class="form__inputC">
 			</div>
 			<div class="comentarios__form--abajo">
-				<label for="" class="form__label">Mensaje</label>
+				<label for="" class="form__labelC">Mensaje</label>
 				<textarea name="" class="form__textarea"></textarea>
+				<input type="submit" class="form__enviar" >
 			</div>
-			<input type="submit" class="form__enviar" >
 		</form>
 	</article>
 
-	<!-- <footer>Conectarte 2021 &copy</footer> -->
+	<footer>Conectarte 2021 &copy</footer>
 
 </body>
 </html>
