@@ -81,13 +81,14 @@ body{
 .principal__img{
     max-width: 48%;
     height: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .principal__imagen{
-    display: flex;
-    justify-content: center; 
-    border: 1px solid blue;
+    border: 1px solid lime;
     width: 90%;
+    height: 300px;
     margin: 0 auto;
 }
 
