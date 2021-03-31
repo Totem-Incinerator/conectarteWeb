@@ -80,12 +80,15 @@ body{
 
 .principal__img{
     max-width: 48%;
+    height: 100%;
 }
 
 .principal__imagen{
     display: flex;
     justify-content: center; 
-    /* border: 1px solid red; */
+    border: 1px solid blue;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .principal__botones{
@@ -389,6 +392,7 @@ body{
 @media screen and (max-width: 360px){
 
     .principal{
-        flex-wrap: nowrap;
+        /* flex-wrap: nowrap; */
+        background: red;
     }
 }
