@@ -341,7 +341,7 @@ body{
     flex-direction: column;
     width: 75%;
     margin: 0 auto;
-    margin-bottom: 15px;   
+    /* margin-bottom: 15px;    */
 }
 
 .form__labelC{
@@ -359,6 +359,7 @@ body{
     border-bottom: 1px solid #fff;
     height: 30px;
     padding-left: 10px;
+    margin-bottom: 10px;
     margin-bottom: 10px;
     font-weight: 600;
     transition: .2s;
@@ -420,4 +421,82 @@ body{
     text-decoration: none;
     display: block;
     color: #fff;
+}
+@media screen and (min-width: 680px){
+
+    *{
+        font-size: 20px;
+        /* background: red; */
+    }
+    .principal__imagen{
+        width: 68%;
+        height: 397px;
+    }
+
+    .login__title{
+        margin-top: 20px;
+    }
+
+    .login__form{
+        width: 50%;
+    }
+
+    .info__textos--mision,
+    .info__textos--proyecto,
+    .info__textos--vision{
+        width: 88%;
+    }
+
+    .login__registrarse p a{
+        display: block;
+    }
+
+    .info__des--content{
+        width: 70%;
+    }
+
+    .comentarios__form{
+        width: 70%;
+    }
+}      
+
+@media screen and (min-width: 1120px){
+    
+    .info__textos{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .info__textos--mision,
+    .info__textos--proyecto,
+    .info__textos--vision{
+        width: 30%;
+        overflow: scroll;
+    }
+
+    .info__des--content{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    .info__des--nb{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid lime; */
+        
+    }
+
+    .comentarios__form{
+        width: 90%;
+        height: 500px;
+    }
+
+    .comentarios__form--abajo{
+        margin-bottom: 10px;
+    }
+
+
 }
