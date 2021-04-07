@@ -8,7 +8,12 @@
 	<link rel="stylesheet" href="estilos2.css">
 </head>
 <body>
-	<header class="encabezado">
+
+	<div class="containerBottomTop">
+		<a href="#inicio">▲</a>
+	</div>
+
+	<header class="encabezado" id="inicio">
 		<a class="encabezado__ancla" href="#">
 			<img class="encabezado__logo" src="images/logo.jpg" alt="soy un logo">
 		</a>
@@ -33,7 +38,7 @@
 					<div class="principal__textos--caja">
 						<h1>Maneja tu Smartphone</h1>
 						<h2>Conectarte</h2>
-						<p>Aprénde a usar tu smartphone con vídeos que te enseñaran a utilizar las opciones básicas de tu smartphone.</p>
+						<p>Aprénde a usar tu smartphone con vídeos que te enseñaran a utilizar las opciones esenciales.</p>
 					</div>
 					<div class="principal__imagen">
 						<!-- <div class="circulo"></div> -->
@@ -45,30 +50,32 @@
 					<input class="boton" type="submit" value="Compartir">
 				</section>
 			</article> 
+
+			<section class="login">
+				<h3 class="login__title" >Inicia sesión</h3>
+				<div class="wrapper">
+					<form action="" class="login__form">
+						<div class="login__nombre">
+							<label class="form__label">Correo</label>
+							<input class="form__input" type="text">
+						</div>
+						<div class="login__contrasena">
+							<label class="form__label">Contraseña</label>
+							<input class="form__input" type="password">
+						</div>
+						<button class="entrar">Entrar</button>
+						<div class="login__registrarse">
+							<p>¿No estás registrado? <a href="">click aquí</a></p>
+						</div>
+					</form>
+				</div>
+			</section>
+
 		</section>
 
 		<!-- <hr> -->
 
-		<section class="login">
-			<h3 class="login__title" >Inicia sesión</h3>
-			<div class="wrapper">
-				<form action="" class="login__form">
-					<div class="login__nombre">
-						<label class="form__label">Correo</label>
-						<input class="form__input" type="text">
-					</div>
-					<div class="login__contrasena">
-						<label class="form__label">Contraseña</label>
-						<input class="form__input" type="password">
-					</div>
-					<button class="entrar">Entrar</button>
-					<div class="login__registrarse">
-						<p>¿No estás registrado? <a href="">click aquí</a></p>
-					</div>
-				</form>
-			</div>
-		</section>
-
+	
 	<!-- <hr> -->
 
 	<article class="info" >
@@ -146,6 +153,8 @@
 			<a class="footer__link" href="#">Terminos y condiciones</a>
 		</div>
 	</footer>
+
+	
 
 </body>
 </html>

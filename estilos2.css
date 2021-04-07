@@ -8,7 +8,31 @@
 }
 
 body{
+    /* background: #16c79a; */
     background: #16c79a;
+}
+
+.containerBottomTop{
+    border-radius: 100%;
+    background: #19456b;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    margin-top: 615px;
+    left: 315px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.containerBottomTop a{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.containerBottomTop:hover{
+    opacity: .6;
+    transition: .6s;
+    cursor: pointer;
 }
 
 .encabezado__ancla{
@@ -56,6 +80,7 @@ body{
     width: 100%;
     height: 786px;
     background: #16c79a;
+    
     /* border: 1px solid red; */
 }
 
@@ -112,6 +137,12 @@ body{
     /* align-self: center; */
 }
 
+.boton:last-child{
+    background: none;
+    border: 1px solid #19456b;
+    color: #19456b;
+}
+
 /* .boton:last-child{
     margin-left: 5px;
 } */
@@ -140,7 +171,8 @@ body{
     display: flex;
     flex-direction: column;
     /* border: 1px solid red; */
-    background: #11698e;
+    /* background: #11698e; */
+    background: #dbf6e9;
     border-radius: 45px;
     width: 80%;
     height: 400px; 
@@ -167,7 +199,7 @@ body{
     margin: 0px auto;
     font-size: 15px;
     margin-bottom: 5px;
-    color: #fff;
+    color: black;
 }
 
 .form__input{
@@ -177,11 +209,11 @@ body{
     margin: 0px auto;
     padding-left: 10px;
     background: none;
-    color: #fff;
+    color: black;
     font-size: 18px;
     border: none;
     outline: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid black;
     /* border: 1px solid lime; */
 
 }
@@ -203,13 +235,12 @@ body{
     font-size: 18px;
     color: #fff;
     margin-top: 45px;
-    border-radius: 45px;
+    border-radius: 15px;
     outline: none;
     cursor: pointer;
     border: 1px solid #fff;
     background: #11b189;
     text-transform: uppercase;
-    
 }
 
 .entrar:hover{
@@ -227,11 +258,15 @@ body{
 
 .login__registrarse{
     /* display: inline-flex; */
-    color: #fff;
+    color: black;
     font-size: 15px;
     margin: 35px auto;
     text-align: center;
     width: 80%;
+}
+
+.login__registrarse a{
+    color: black;
 }
 
 
@@ -375,13 +410,14 @@ body{
     resize: none;
     outline: none;
     height: 100px;
+    margin-top: 10px;
 }
 
 .form__enviar{
     margin: 25px auto;
     width: 150px;
-    padding: .3rem;
-    border-radius: 22px;
+    padding: .4rem;
+    border-radius: 15px;
     outline: none;
     border: 1px solid transparent;
     background: #16c79a;
@@ -395,6 +431,9 @@ body{
     transition: .5s;
 }
 
+
+
+/* FOOTER */
 .footer{
     /* border: 1px solid red; */
     width: 100%;
@@ -422,12 +461,16 @@ body{
     display: block;
     color: #fff;
 }
+
+
+/* TAMAÑOS */
 @media screen and (min-width: 680px){
 
-    *{
-        font-size: 20px;
-        /* background: red; */
+    .containerBottomTop{
+        left: 600px;
     }
+
+
     .principal__imagen{
         width: 68%;
         height: 397px;
@@ -461,7 +504,20 @@ body{
 }      
 
 @media screen and (min-width: 1120px){
+
+    .textos__info{
+        display: flex;
+    }
     
+    .principal__textos--caja{
+        margin-top: 0;
+    }
+
+    .login{
+        padding-top: 50px;
+    }
+
+    /* SECCIÓN DE INFO PROYECTO */
     .info__textos{
         display: flex;
         justify-content: space-evenly;
@@ -472,7 +528,7 @@ body{
     .info__textos--proyecto,
     .info__textos--vision{
         width: 30%;
-        overflow: scroll;
+        overflow: auto;
     }
 
     .info__des--content{
@@ -494,9 +550,12 @@ body{
         height: 500px;
     }
 
+    .form__textarea{
+        height: 120px;
+    }
+
     .comentarios__form--abajo{
         margin-bottom: 10px;
     }
-
 
 }
