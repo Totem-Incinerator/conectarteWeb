@@ -161,6 +161,7 @@
 		display: flex;
 		height: 670px;
 		align-items:center;
+		padding-top: 115px;
 	}
 	.info_nombre{
 		
