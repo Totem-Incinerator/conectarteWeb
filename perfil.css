@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.container{
+	
+	width: 100%;
+	background:#8801A5;
+
+
+}
+.contenedor_imagen{
+	
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+
+}
+.imagen_perfil{
+	display: block;
+	margin: 0 auto;
+	margin-top: 35px;
+	border-radius: 80%;
+	width: 80%;
+	height: 80%;
+}
+.contenedor_informacion{
+	box-shadow: 2px 2px 10px #666;
+	border-radius: 10%;
+    
+	height: 70%;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	border: 1px solid black;
+    padding: 7%;
+    background:#8801A5;
+    box-shadow: 5px 5px 25px #221 inset;
+    
+}
+.info_label{
+	
+	opacity: .512;
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+	
+}
+ h1{
+    color: #fff;
+    display: inline;
+    font-size: 18px;
+    font-weight: 600;
+}
+.info_informacion p{
+	color: #fff;
+}
+.info_nombre,
+.info_correo,
+.info_edad,
+.info_genero,
+.info_telefono,
+.info_informacion{
+    margin-bottom: 10px;
+
+}
+.contenedor_video{
+	width: 100%;
+	
+
+
+}
+.titulo_video{
+	margin: 10px auto;
+    text-align: center;
+    padding:10px 0 ;
+    color:#fff;
+    border-radius: 12px;
+}
+.video{
+    display: block;
+	width: 80%;
+	margin: 15px auto;
+	border-radius: 30px;
+}
+@media screen and (max-width:360px){
+
+    .imagen_perfil{
+	border-radius: 60%;
+	width: 60%;
+	height: 60%;
+}
+
+	.contenedor_informacion{
+      overflow: scroll;
+      
+      
+	}
+	
+
+}
+@media screen and (max-width: 550px){
+	.contenedor_informacion{
+		height: 80vh;
+		
+		
+	}
+	.imagen_perfil{
+	border-radius: 60%;
+	width: 60%;
+	height: 60%;
+}
+}
+
+@media screen and (min-width: 451px) and (max-width: 1119px){
+.imagen_perfil{
+	
+	width: 35%;
+	height: 35%;
+
+}
+.info_nombre{
+		
+		width: 60%;
+		margin: 20px auto;
+		text-align: center;
+		
+	}
+}
+/*@media screen and (min-width: 992px){
+	.container{
+
+	}
+	.contenedor_informacion{
+     height: 80vh;
+     border: none;
+
+    } 
+    .imagen_perfil{
+	border-radius: 60%;
+	width: 60%;
+	height: 60%;
+}
+	.contenedor_video{
+     
+     height: 500px;
+	}
+	.video{
+		height: 400px;
+	}
+}
+*/
+@media screen and (min-width: 1120px){
+	.container{
+		display: flex;
+		height: 670px;
+		align-items:center;
+	}
+	.info_nombre{
+		
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.contenedor_informacion{
+		height: 80vh;
+		border: none;
+		padding:3% ;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.video{
+		height: 250px;
+	}
+
+}
+

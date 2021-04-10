@@ -226,12 +226,24 @@ body{
     text-transform: uppercase;
 }
 
+.entrar_ancla{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    display: block;
+}
+
+.entrar_ancla:hover{
+    color: #01A8EE;
+}
+
 .entrar:hover{
     color: #01A8EE;
     background: #fff;
     border: 1px solid #01A8EE;
     transition: .2s;
 }
+
 
 .login__registrarse{
     /* display: inline-flex; */
